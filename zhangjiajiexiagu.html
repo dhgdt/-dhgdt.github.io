@@ -1,0 +1,50 @@
+<!DOCTYPE html>+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <title>张家界峡谷—丁辉制作2024.03</title>
+</head>
+<body style="margin: 0px;padding: 0px;background-color:#CBDBE8">
+    <!-- <vidoe src="文件地址" controls="controls"></video> 
+     -->
+
+
+<!-- <div >   
+    <video controls id="video">11</video>
+
+</div>
+
+    -->
+ <div style="margin: 0px;padding: 0px; display: flex; justify-content: center; align-items: center;background-color:#CBDBE8;">
+            <p style="color:rgb(0, 0, 0);margin-bottom: 0px;padding: 0px;"><b>丁辉的个人播放器</b></p>
+          
+          </div>
+    <div class="video-container" style="background-color:#CBDBE8;margin: 0px;padding: 0px;">
+       
+    
+        <video style=" width:100%; height: 100%; object-fit: cover; display:flex;justify-content:center;align-items:center" controls id="video" ></video>
+      </div>
+
+    
+      <h4 style="text-align: center;line-height: 25px;">张家界大峡谷
+        张家界大峡谷位于张家界市慈利县三官寺乡，紧邻世界自然遗产、世界地质公园张家界武陵源风景名胜区， 张家界大峡谷是一个新近开发建设的旅游景区。</h4>
+
+<script>
+if(Hls.isSupported()){
+var video = document.getElementById('video');// 获取 video 标签
+var hls = new Hls();// 实例化 Hls 对象
+hls.loadSource('https://gcalic.v.myalicdn.com/gc/hsxkssqdzrqj_1/index.m3u8?contentid=2820180516001');// 传入路径
+    //   测试线路：https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+    // https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8?
+hls.attachMedia(video);
+hls.on(Hls.Events.MANIFEST_PARSED,function(){
+video.play();// 调用播放 API
+});
+}
+</script>
+
+</body>
+</html>

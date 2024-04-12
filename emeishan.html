@@ -1,0 +1,49 @@
+<!DOCTYPE html>+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <title>峨眉山云海日出—丁辉制作2024.03</title>
+</head>
+<body style="margin: 0px;padding: 0px;background-color:#CBDBE8">
+    <!-- <vidoe src="文件地址" controls="controls"></video> 
+     -->
+
+
+<!-- <div >   
+    <video controls id="video">11</video>
+
+</div>
+
+    -->
+ <div style="margin: 0px;padding: 0px; display: flex; justify-content: center; align-items: center;background-color:#CBDBE8;">
+            <p style="color:rgb(0, 0, 0);margin-bottom: 0px;padding: 0px;"><b>丁辉的个人播放器</b></p>
+          
+          </div>
+    <div class="video-container" style="background-color:#CBDBE8;margin: 0px;padding: 0px;">
+       
+    
+        <video style=" width:100%; height: 100%; object-fit: cover; display:flex;justify-content:center;align-items:center" controls id="video" ></video>
+      </div>
+
+    
+      <h4 style="text-align: center;line-height: 25px;">登顶峨眉山，云海、日出、佛光等奇观尽收眼底。山间的原始森林茂密葱茏，绿意盎然。峨眉山的四季分明，每个季节都有不同的风景。<br>春天，漫山遍野的杜鹃花盛开，如诗如画；<br>夏天，满目青翠，绿意盎然；<br>秋天，层林尽染，红叶满山；<br>冬天，银装素裹，白雪皑皑。</h4>
+
+<script>
+if(Hls.isSupported()){
+var video = document.getElementById('video');// 获取 video 标签
+var hls = new Hls();// 实例化 Hls 对象
+hls.loadSource('https://gctxyc.liveplay.myqcloud.com/gc/emsarm_1/index.m3u8?contentid=2820180516001');// 传入路径
+    //   测试线路：https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+    // https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8?
+hls.attachMedia(video);
+hls.on(Hls.Events.MANIFEST_PARSED,function(){
+video.play();// 调用播放 API
+});
+}
+</script>
+
+</body>
+</html>

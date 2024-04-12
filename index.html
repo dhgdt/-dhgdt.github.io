@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国风景直播欣赏</title>
+    <style>
+        /* html{
+
+            height: 100%;
+        } */
+        body  {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* height: 100%; */
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            float: left;
+            overflow: auto;
+        }
+        #sidebar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        #sidebar a:hover {
+            background-color: #555;
+        }
+        #content {
+            margin-left: 200px;
+            padding: 20px;
+            height: 100vh;
+            overflow: auto;
+        }
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 200px;
+            width: calc(100% - 200px);
+            height: 100%;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <a href="National Landscape Overview.html" target="iframe">全国风景总览</a>
+    <a href="emeishan.html" target="iframe">峨眉云海日出</a>
+    <a href="zhangjiajiexiagu.html" target="iframe">张家界大峡谷</a>
+    <a href="https://www.buyiju.com/lhl/" target="iframe" target="iframe">风景持续增加中</a>
+</div>
+ 
+<div id="content">
+    <div class="iframe-container">
+        <iframe name="iframe" src="National Landscape Overview.html"></iframe>
+    </div>
+</div>
+ 
+</body>
+</html>
